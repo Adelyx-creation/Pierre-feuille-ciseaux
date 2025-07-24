@@ -1,4 +1,6 @@
+let gestepossible = ["pierre", "feuille", "ciseaux"]
 
+<<<<<<< Updated upstream
 let gestePossible = Array ["Pierre", "Feuille", "Ciseaux"]
 const playButton = document.elementById("playButton");
 
@@ -13,3 +15,17 @@ playButton.addEventListener("click", () => {
     return  (log.gestePossible.innerText);
   }
   console.log (getHumanChoice)}
+=======
+function getComputerChoice () {
+    let indexaleatoire = Math.random () * 3
+
+console.log (indexaleatoire)
+
+   
+
+
+ 
+}
+
+getComputerChoice ()
+>>>>>>> Stashed changes
