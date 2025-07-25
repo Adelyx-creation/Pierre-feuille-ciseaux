@@ -39,26 +39,28 @@ let computerScore = 0
 function playRound(humanChoice, computerChoice) {
  
 if (humanChoice == "ciseaux" && computerChoice == "feuille"){
-    console.log ("Tu as gagné")
+    console.log ("tu as gagné " + humanChoice + " bat "+ computerChoice)
    }
   else if (humanChoice == "feuille" && computerChoice == "pierre"){
-    console.log ("Tu as gagné")
+    console.log ("tu as gagné " + humanChoice + " bat "+ computerChoice)
 }
   else if (humanChoice == "pierre" && computerChoice == "ciseaux"){
-    console.log ("Tu as gagné")
+    console.log ("tu as gagné " + humanChoice + " bat "+ computerChoice)
 }
  else if (humanChoice == computerChoice) {
    console.log ("égalité")
 }
   else if (humanChoice == "pierre" && computerChoice == "feuille"){
-    console.log ("victoire de l'ordi")
+    console.log ("Vous perdez ! " + computerChoice + " bat " + humanChoice)
 }
   else if (humanChoice == "feuille" && computerChoice == "ciseaux"){
-   console.log ("victoire de l'ordi")
+   console.log ("Vous perdez ! " + computerChoice + " bat " + humanChoice)
   }
   else if (humanChoice == "ciseaux" && computerChoice == "pierre"){
-   console.log ("victoire de l'ordi")
+   console.log ("Vous perdez ! " + computerChoice + " bat " + humanChoice)
     }
+
+
  }
 
 
