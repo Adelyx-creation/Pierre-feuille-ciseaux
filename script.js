@@ -7,7 +7,7 @@ function getComputerChoice() {
   console.log(gestealeatoire)
   return gestealeatoire
 }
-let gestealeatoire = getComputerChoice()
+//let gestealeatoire = getComputerChoice()
 
 // human exo 3
 
@@ -20,34 +20,53 @@ function getHumanChoice() {
   
 
     let play = prompt ("Jouez Pierre Feuille ou ciseaux");
-console.log (play)
+console.log (play.toLowerCase())
+return play.toLowerCase()
 
-  if (play == "ciseaux" && gestealeatoire == "feuille"){
+  }
+    
+//console.log ()   
+ //getHumanChoice ()
+  
+// exo 4
+
+let humanScore = 0
+let computerScore = 0
+
+// exo 5
+
+
+function playRound(humanChoice, computerChoice) {
+ 
+if (humanChoice == "ciseaux" && computerChoice == "feuille"){
     console.log ("Tu as gagné")
    }
-  else if (play == "feuille" && gestealeatoire == "pierre"){
+  else if (humanChoice == "feuille" && computerChoice == "pierre"){
     console.log ("Tu as gagné")
 }
-  else if (play == "pierre" && gestealeatoire == "ciseaux"){
+  else if (humanChoice == "pierre" && computerChoice == "ciseaux"){
     console.log ("Tu as gagné")
 }
- else if (play == gestealeatoire) {
+ else if (humanChoice == computerChoice) {
    console.log ("égalité")
 }
-  else if (play == "pierre" && gestealeatoire == "feuille"){
+  else if (humanChoice == "pierre" && computerChoice == "feuille"){
     console.log ("victoire de l'ordi")
 }
-  else if (play == "feuille" && gestealeatoire == "ciseaux"){
+  else if (humanChoice == "feuille" && computerChoice == "ciseaux"){
    console.log ("victoire de l'ordi")
   }
-  else if (play == "ciseaux" && gestealeatoire == "pierre"){
+  else if (humanChoice == "ciseaux" && computerChoice == "pierre"){
    console.log ("victoire de l'ordi")
     }
  }
-    
-  console.log ()   
- getHumanChoice ()
-  
 
 
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
 
+ humanChoice
+
+
+playRound(humanChoice, computerChoice);
+``
